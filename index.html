@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Achmad Syarif Hidayat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Digital CV</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="about" class="profile-card">
+            <div class="profile-header">
+                <img src="assets/profile.jpg" alt="Foto Profil Achmad Syarif Hidayat" class="profile-img">
+                <div class="profile-title">
+                    <h1>Achmad Syarif Hidayat</h1>
+                    <h2>Web Developer & Computer Engineering Student</h2>
+                    <p class="location">Bekasi, Jawa Barat, Indonesia</p>
+                    <div class="contact-links">
+                        <a href="mailto:syarif@example.com">Email</a> | 
+                        <a href="tel:+628123456789">Telepon</a> | 
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-body">
+                <h3>About Me</h3>
+                <p>Saya adalah seorang mahasiswa Teknik Komputer yang berfokus pada pengembangan web, infrastruktur server lokal, dan sistem tertanam. Memiliki passion tinggi dalam memecahkan masalah praktis serta membangun sistem web yang efisien, responsif, dan terintegrasi.</p>
+                <button onclick="window.print()" class="btn-print">Print / Download CV</button>
+            </div>
+        </section>
+
+        <section id="education" class="cv-section">
+            <h2>Education</h2>
+            <article class="cv-item">
+                <h3>D3 Teknik Komputer</h3>
+                <p class="institution">Universitas Bani Saleh | 2024 - Sekarang</p>
+                <p>Fokus studi pada Pemrograman Web, Jaringan Komputer, Sistem Tertanam (ESP32/Arduino), dan Administrasi Server.</p>
+            </article>
+        </section>
+
+        <section id="experience" class="cv-section">
+            <h2>Work & Project Experience</h2>
+            <article class="cv-item">
+                <h3>Web Application Migration Freelancer</h3>
+                <p class="institution">BPMSP Project | 2026</p>
+                <p>Berhasil melakukan migrasi aplikasi Buku Tamu Elektronik (etamubpmsp.id) dari cloud hosting berbasis cloud ke dedicated local server environment (XAMPP/Laragon, HeidiSQL) pada jaringan lokal Wi-Fi.</p>
+            </article>
+            <article class="cv-item">
+                <h3>Embedded System Developer</h3>
+                <p class="institution">Proyek Tongkat Tunanetra Pintar | 2026</p>
+                <p>Mengembangkan prototipe tongkat pintar berbasis ESP32, sensor ToF VL53L0X, GPS NEO-6M, modul 4G A7670C, dan notifikasi darurat via Telegram SOS.</p>
+            </article>
+        </section>
+
+
+        <section id="skills" class="cv-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>HTML5 & CSS3 (Flexbox & Grid)</li>
+                        <li>JavaScript (Basic & DOM Manipulations)</li>
+                        <li>PHP & MySQL / MariaDB</li>
+                        <li>Docker Containerization</li>
+                        <li>Git & GitHub Version Control</li>
+                        <li>Local Web Server (Apache/Nginx/XAMPP)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Hardware & Network</h3>
+                    <ul>
+                        <li>ESP32 & Arduino Circuit Design</li>
+                        <li>Microcontroller Sensor Integration</li>
+                        <li>Packet Tracer Network Simulation</li>
+                        <li>Debian Linux BIND9 & Network Config</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="cv-section">
+            <h2>Projects / Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <h3>E-Tamu BPMSP Web App</h3>
+                    <p>Sistem buku tamu elektronik lokal untuk instansi yang berjalan efisien pada jaringan intranet Wi-Fi dedicated.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>Smart Blind Stick Prototype</h3>
+                    <p>Tongkat bantuan disabilitas netra dengan deteksi jarak laser ToF, ketinggian air, dan peringatan posisi GPS via GSM.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>Bansal Cup Graphic Assets</h3>
+                    <p>Desain sistematis untuk bagan pertandingan, papan skor, dan jadwal turnamen futsal berbasis visual grafis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cv-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Achmad Syarif Hidayat. All Rights Reserved - Universitas Bani Saleh.</p>
+    </footer>
+
+</body>
+</html>
